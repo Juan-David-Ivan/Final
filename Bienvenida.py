@@ -7,7 +7,7 @@ def main(page: ft.Page):
         page.go("/formulario")
         page.update()
 
-    volver_btn = ft.ElevatedButton(text="Adelante", on_click=volver)
+    volver_btn = ft.ElevatedButton(text="VOLVER AL LOGIN...", on_click=volver)
 
     columna = ft.Column(
         horizontal_alignment=ft.CrossAxisAlignment.CENTER,
