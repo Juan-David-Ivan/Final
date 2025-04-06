@@ -1,4 +1,6 @@
 import flet as ft
+
+import Bienvenida
 import FormulariosPage
 import Regitros
 
@@ -21,6 +23,13 @@ def main(page: ft.Page):
                 ft.View(
                     route = "/Registros",
                     controls = [Regitros.main(page)]
+                )
+            )
+        elif page.route == "/Bienvenida":
+            page.views.append(
+                ft.View(
+                    route = "/Bienvenida",
+                    controls = [Bienvenida.main(page)]
                 )
             )
 

@@ -7,7 +7,7 @@ def main(page: ft.Page):
         horizontal_alignment=ft.CrossAxisAlignment.CENTER,
         alignment=ft.CrossAxisAlignment.CENTER,
         controls=[
-            ft.Text("Aqui estaria el proyecto final"),
+            ft.Text("BIENVENIDO A MI PÁGINA WEB RAFA", color="white"),
 
         ]
     )
