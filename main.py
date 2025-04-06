@@ -1,6 +1,7 @@
 import flet as ft
 import FormulariosPage
-import ConsultasPage
+import Regitros
+
 
 def main(page: ft.Page):
     page.title = "Login"
@@ -15,11 +16,11 @@ def main(page: ft.Page):
                     controls = [FormulariosPage.main(page)]
                 )
             )
-        elif page.route == "/consultas":
+        elif page.route == "/Registros":
             page.views.append(
                 ft.View(
-                    route = "/consultas",
-                    controls = [ConsultasPage.main(page)]
+                    route = "/Registros",
+                    controls = [Regitros.main(page)]
                 )
             )
 
@@ -30,4 +31,4 @@ def main(page: ft.Page):
 
 
 if __name__ == '__main__':
-    ft.app(target=main)
+    ft.app(target=main, view=ft.WEB_BROWSER, port=30021)
